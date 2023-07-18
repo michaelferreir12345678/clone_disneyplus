@@ -9,11 +9,28 @@
 </head>
 
 <body>
+
+    <header class="header header--is-hidden">
+        <div class="header__container">
+            <h1  >
+                <img class="header__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a  class="button button--secondary" href="#">Assine agora</a>
+                </li>
+                <li  class="header__links__item">
+                    <a class="button button--dark " href="#">Entrar</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
     <section class="hero">
         <div class="hero__content">
-            <h1 class="hero__content__branding">
+            <div class="hero__content__branding">
                 <img src="./dist/images/disneyplus.svg" alt="Disney+">
-            </h1>
+            </div>
             <h3 class="title--small">As melhores histórias em um so lugar.</h3>
             <p>
                 <a href="#" class="link-text">Assinar o Disney+</a>
@@ -39,6 +56,7 @@
             </p>
         </div>
     </section>
+
     <section class="shows">
         <nav class="shows__tabs">
             <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is-active">Em breve</button>
@@ -151,7 +169,10 @@
     </section>
 
     <section class="image-text-section image-text-section--image-full-width">
-        <img src="./dist/images/fundo_rei_leao.png" alt="rei-leao">
+        <picture>
+            <source media="(max-width:768px)" srcset="./dist/images/fundo_rei_leao_celular.png">
+            <img src="./dist/images/fundo_rei_leao.png" alt="rei-leao">
+        </picture>
         <div class="image-text-section__text_container image-text-section--image-full-width__text_container">
             <h2 class="title">Baixe filmes e séries</h2>
             <p class="text--big">Baixe e assista quando e onde quiser. Assim, seus favoritos estão sempre com você, até mesmo sem internet.</p>
@@ -205,6 +226,89 @@
             </li>
         </ul>
     </section>
+
+    <section class="faq">
+        <h2 class="title">Perguntas Frequentes</h2>
+        <ul class="faq__questions">
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    O que esta incluido no Disney+?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    <span>O Disney+ oferece:</span>
+                    <ul class="faq__questions__item__answer__list">
+                        <li class="faq__questions__item__answer__list__item--first">Experiência de entretenimento exclusiva.</li>
+                        <li class="faq__questions__item__answer__list__item">As melhores histórias da Disney, Pixar, Marvel, Star Wars e National Geographic, tudo em um só lugar.</li>
+                        <li class="faq__questions__item__answer__list__item">Groupwatch: assista junto com amigos ou familiares, mesmo separados.</li>
+                        <li class="faq__questions__item__answer__list__item">Downloads ilimitados em até 10 dispositivos compatíveis.</li>
+                        <li class="faq__questions__item__answer__list__item">Mais de 300 títulos em 4K UHD e HDR.</li>
+                        <li class="faq__questions__item__answer__list__item">A possibilidade de assistir em até 4 dispositivos compatíveis simultaneamente sem custo adicional.</li>
+                        <li class="faq__questions__item__answer__list__item">IMAX Enhanced: disponível para alguns títulos da Marvel em dispositivos compatíveis com o Disney+.</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Pergunta?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    A resposta da pergunta!
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Pergunta?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    A resposta da pergunta!
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="./dist/images/disneyplus.svg" alt="Disney plus">
+            <ul class="footer__links">
+                <li class="footer__links__item">
+                    <div class="language-selector">
+                        <img src="./dist/images/icones/globe.svg" alt="globo do mundo">
+                        <select>
+                            <option>english</option>
+                            <option selected>Portugues</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Termos e Condições de Uso</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Política de privacidade</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Proteção de Dados no Brasil</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Anúncios personalizados</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Dispositivos compatíveis</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Ajuda</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Sobre o Disney+</a>
+                </li>
+            </ul>
+            <p class="text--small">
+                ® 2023 Disney, Disney+ e The Walt Disney Company. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sujeito a disponibilidade.
+            </p>
+            <p class="text--small">
+                Disney+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Disney+ é comercializado por The Walt Disney Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.551, 12.555, 12.559, Piso 10, São Paulo/SP – CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20
+            </p>
+        </div>
+    </footer>
 
     <script src="./src/main.js"></script>
 </body>
